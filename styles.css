@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8e44ad;
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: rgb(38, 57, 77) 0px 15px 15px -10px;
+}
+
+.icon-container {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 48px;
+}
+
+.fa-instagram {
+  color: #343434;
+  transition: 0.3s ease-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 750px) {
+  body {
+    flex-direction: column;
+  }
+}
